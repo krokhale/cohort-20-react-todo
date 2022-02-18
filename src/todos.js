@@ -1,6 +1,18 @@
 import React, {useState, useEffect} from 'react';
 
 function Todos(props) {
+
+    const [list, setList] = useState([]);
+
+    // ['Go to Grocery', 'another item']
+
+    // [{task: 'Go to grocery', completed: false}, {task: 'Another item', completed: true}]
+
+    // setList([...list, {task: 'Do something', completed: false}])
+
+    // {1: {task: 'Go to grocery', completed: false}, 2: {task: 'Another item', completed: true}}
+
+
     return (
         <>
             <div className={'w-screen bg-black flex justify-start gap-4'}>
@@ -29,6 +41,20 @@ function Todos(props) {
 
 
                     <div className={'p-4'}>
+
+                        {/*{list && list.map((listItem, idx) => {*/}
+                        {/*    return <div className={'flex justify-between px-4 mt-4 bg-gray-100 p-2 border-b'}>*/}
+                        {/*        <div>*/}
+                        {/*            <input type="checkbox"/>*/}
+                        {/*            <span className={'ml-2 text-sm font-semibold'}>{listItem.task}</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div>*/}
+                        {/*            {listItem.completed ? '' : ''}*/}
+                        {/*            <i className="fa-solid fa-trash text-sm text-red-500"></i>*/}
+                        {/*        </div>*/}
+
+                        {/*    </div>*/}
+                        {/*})}*/}
 
                         <div className={'flex justify-between px-4 mt-4 bg-gray-100 p-2 border-b'}>
                             <div>
